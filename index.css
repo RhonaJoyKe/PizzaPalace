@@ -4,7 +4,7 @@ body{
     background-color: #747474;
 
 }
-.services{
+#services{
     background-image: url("Images/taco-pizza.jpg");
     background-size: cover;
 }
