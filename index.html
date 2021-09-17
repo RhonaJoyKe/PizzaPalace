@@ -5,10 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+  <nav class="navbar-light list-unstyled list-inline">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="fa fa-shopping-cart"></span> Order Now</a></li>
+       
+      </ul>
+    </div>
+  </nav>
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -36,10 +54,12 @@
           <div class="col-sm-4">
             <h5>Delivery Services</h5>
             <img src="Images/service1-removebg-preview.png">
+            <p>We offer Delivery services to our Customers at very fair price</p>
           </div>
           <div class="col-sm-4">
            <h5>Catering Services</h5>
            <img src="Images/services2-removebg-preview.png" width="300px"height="150px">
+           <p></p>
           </div>
           <div class="col-sm-4">
             <h5>PA system </h5>
@@ -47,10 +67,18 @@
           </div>
         </div>
       </div>
+      <h5>Order Now</h5>
       <div class="container" id="order">
         <div class="row">
           <div class="col-sm-6">
-
+            <label for="typeofp" class="form-label">Select the type of Pizza</label>
+            <select class="form-select form-select-sm" id="typeofp" required>
+              
+              <option selected>-- Type of Pizza</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
             
           </div>
           <div class="col-sm-6">
