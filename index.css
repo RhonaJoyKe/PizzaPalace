@@ -4,7 +4,17 @@ body{
     background-color: #747474;
 
 }
-#services{
-    background-image: url("Images/taco-pizza.jpg");
+#about{
+    background-image: url("Images/pizza4.jpegb");
     background-size: cover;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    color: #272727;
+    font-weight: 900;
+    font-size: small;
+    background-position: center;
+}
+#services{
+   background-color: #FF652F;
+   
 }
