@@ -11,7 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-  <nav class="navbar-light list-unstyled list-inline">
+  <div class="container">
+  <nav class="navbar-nav bg-dark ">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">WebSiteName</a>
@@ -27,17 +28,18 @@
       </ul>
     </div>
   </nav>
-    <div class="container">
+</div>
+    <div class="container" id="header">
         <div class="row">
-            <div class="col-sm-4">
-              Column
-            </div>
-            <div class="col-sm-8">
+            <div class="col-sm-6 text-center"  >
+              <p id="welcome"></p>
+            </div> 
+            <div class="col-sm-6">
               <img src="Images/pizza.jpeg" img class="img-fluid">
             </div>
     </div>
     </div>
-    <h1>ABOUT US </h1>
+    <h3>ABOUT US </h3>
     <div class="container text-center" id="about">
         
         <p>
@@ -48,13 +50,14 @@
 
     </div>
     <h3>What we Offer</h3>
-    <div class="container" id="services">
+    <div class="container" >
+    <div id="services">
        
         <div class="row">
           <div class="col-sm-4">
             <h5>Delivery Services</h5>
             <img src="Images/service1-removebg-preview.png">
-            <p>We offer Delivery services to our Customers at very fair price</p>
+            <p ><span style="text-align: center;"> We offer Delivery services to our Customers at very fair price</span> </p>
           </div>
           <div class="col-sm-4">
            <h5>Catering Services</h5>
@@ -67,10 +70,12 @@
           </div>
         </div>
       </div>
-      <h5>Order Now</h5>
+    </div>
+      
       <div class="container" id="order">
+        <h3>Order Now</h3>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-4" id="select">
             <label for="typeofp" class="form-label">Select the type of Pizza</label>
             <select class="form-select form-select-sm" id="typeofp" required>
               
@@ -89,17 +94,26 @@
               <option value="2">Medium-800</option>
               <option value="3">Large-1000</option>
               </select>
-              an & Hand Tossed, Thin Crust, Brooklyn Style & Gluten Free Crust.
-            
+
+              <label for="crust" class="form-label">Select the crust </label>
+            <select class="form-select form-select-sm" id="crust" required>
+              <option selected>-- Type of crust</option>
+              <option value="1"> Crispy-100</option>
+              <option value="2">Stuffed-150</option>
+              <option value="3">Gluten-free-200</option>
+              </select>
+
+             
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-8" id="tabledis">
             <table class="table">
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">Crust</th>
+                  <th scope="col">Toppings</th>
                 </tr>
               </thead>
               <tbody>
@@ -107,16 +121,21 @@
               </table>
           </div>
         </div>
+        </div>
           <div class="container" id="footer">
             <div class="row">
                 <div class="col-sm-4" id ="Find">
-                  <h3>Find Us</h3>
+                  <h4>Find Us</h4>
+                  <p>Located Next to Odion</p>
+                  <p>Nairobi,Kenya</p>
                 </div>
                 <div class="col-sm-4">
-                  <h3>Customer Support</h3>
+                  <h4>Customer Support</h4>
+                  <p>rhonajoy8@gmail.com</p>
+                  <p>+254706555078</p>
                 </div>
                 <div class="col-sm-4">
-                  <h3>Careers</h3>
+                  <h4>Careers</h4>
                   <p>Job Openings</p>
                   <p>Employee Success</p>
                   <p>Benefits</p>
@@ -127,9 +146,10 @@
               <img src="Images/facebook.png">
               <img src="Images/twitter.png">
               <img src="Images/g_plus.png">
-              <p>www.felicepizzaplace.com</p>
-              <p>&copy 2021</p>
+              <p><b>www.felicepizzaplace.com</b></p>
+              <p><b>&copy 2021</b></p>
           </div>
 
 </body>
+<script src="index.js"></script>
 </html>
