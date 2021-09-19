@@ -120,6 +120,22 @@ class PizzaOrder { // Naming conventions
         let crustPrice = mapOfPizzaCrustPrices.get(this.pizzaCrust);
 
         // Get price of each topping based on pizza size
+        let unitToppingPrice
+        switch(this.pizzaSize) {
+            case 1:
+                unitToppingPrice = mapOfPizzaToppingPrices.get(1)
+                break;
+            case 2:
+                unitToppingPrice = mapOfPizzaToppingPrices.get(2)
+                break;
+            case 3:
+                unitToppingPrice = mapOfPizzaToppingPrices.get(3)
+                break;
+            default:
+                unitToppingPrice = mapOfPizzaToppingPrices.get(0)
+                break;
+        }
+
 // Action listeners > Validator > Add to cart
 
 function setUpActionListeners(){
