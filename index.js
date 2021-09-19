@@ -104,3 +104,13 @@ function setUpActionListeners(){
 
         updateTotal()
     });
+    let pizzaSizePicker = document.getElementById("pizza-size")
+    pizzaSizePicker.addEventListener("change", () => {
+        let value = pizzaSizePicker.value
+
+        // Update value on class
+        currentOrder.pizzaSize = parseInt(value)
+
+        // console.log(value);
+
+        updateTotal()
