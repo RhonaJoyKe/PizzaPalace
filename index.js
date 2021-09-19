@@ -114,7 +114,7 @@ function setUpActionListeners(){
         // console.log(value);
 
         updateTotal()
-        
+
         let pizzaCrustPicker = document.getElementById("pizza-crust")
         pizzaCrustPicker.addEventListener("change", () => {
             let value = pizzaCrustPicker.value
@@ -124,3 +124,25 @@ function setUpActionListeners(){
     
             updateTotal()
         });
+
+    let inputs = document.querySelectorAll("input[type='checkbox']")
+    
+    // Iterate through all checkboxes adding event listeners
+    for(let i = 0; i < inputs.length; i++) {
+        let currentCheckbox = inputs[i]
+
+        currentCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                currentOrder.toppings.push(currentCheckbox.value)
+            } else {
+                // Get index of the topping index
+                // Array.indexOf(value)
+                let indexOfTopping = currentOrder.toppings.indexOf(currentCheckbox.value)
+
+                // Remove the element from our toppings list
+                currentOrder.toppings.splice(indexOfTopping, 1)
+            }
+
+            updateTotal()
+        });
+    }
