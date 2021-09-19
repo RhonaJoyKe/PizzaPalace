@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!-- Import boostrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   <!-- Import font awesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+   <!-- Import custom css -->
+   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="container">
@@ -79,84 +83,113 @@
         </div>
       </div>
     </div>
-      
-      <div class="container" id="order">
-        <h3>Order Now</h3>
-        <div class="row">
-          <div class="col-sm-4" id="select">
-            <form action="">
+    <div class="container" id="order">
+      <h3>Order Now</h3>
+      <div class="row">
+        <div class="col-sm-4" id="select">
+          <form action="">
             <label for="typeofp" class="form-label">Select the type of Pizza</label>
-            <select class="form-select form-select-sm" id="typeofp" required>
-              
-              <option selected>-- Type of Pizza</option>
+            <select class="form-select form-select-sm" id="pizza-type" required>
+              <option value="0" selected>-- Type of Pizza</option>
               <option value="1">Cheese Burger</option>
               <option value="2">Meat Deluxe</option>
               <option value="3">Chicken Hawaiian</option>
-              <option value="4">Chicken Macon BBQ</option>
+              <option value="4">Chicken Bacon BBQ</option>
               <option value="5">Chicken & Beef Pepperoni</option>
               <option value="6">Veg Feast</option>
-              </select>
-              <label for="size" class="form-label">Select the sizeof Pizza</label>
-            <select class="form-select form-select-sm" id="size" required>
-              <option selected>-- size of Pizza</option>
-              <option value="1">small-600</option>
+            </select>
+
+            <label for="size" class="form-label">Select the size of Pizza</label>
+            <select class="form-select form-select-sm" id="pizza-size" required>
+              <option value="0" selected>-- Size of Pizza</option>
+              <option value="1">Small-600</option>
               <option value="2">Medium-800</option>
               <option value="3">Large-1000</option>
-              </select>
+            </select>
 
-              <label for="crust" class="form-label">Select the crust </label>
-            <select class="form-select form-select-sm" id="crust" required>
-              <option selected>-- Type of crust</option>
-              <option value="1"> Crispy-100</option>
+            <label for="crust" class="form-label">Select the crust </label>
+            <select class="form-select form-select-sm" id="pizza-crust" required>
+              <option value="0" selected>-- Type of crust</option>
+              <option value="1">Crispy-100</option>
               <option value="2">Stuffed-150</option>
               <option value="3">Gluten-free-200</option>
-              </select>
-              <p>Select the Toppings. small size:@50 medium size:@100 large size:@150</p>
-              <input class="form-check-input" type="checkbox" value="" id="toppings">
-                <label for="toppings" class="form-label"> Pepperoni.</label>
-                
-                <br>
-                <input class="form-check-input" type="checkbox" value="" id="toppings">
-                <label for="toppings" class="form-label"> Mushrooms</label><br>
-                
-              
-                <input class="form-check-input" type="checkbox" value="" id="toppings">
-                <label for="toppings" class="form-label"> Onions.</label><br>
-                
-              
-                <input class="form-check-input" type="checkbox" value="" id="toppings">
-                <label for="toppings" class="form-label"> Sausage</label><br>
-                
-                <input class="form-check-input" type="checkbox" value="" id="toppings">
-                <label for="toppings" class="form-label"> Bacon</label><br>
-              
-              
-              </form>
-              
-              
-             
-          </div>
-          <div class="col-sm-8" id="tabledis">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Type</th>
-                  <th scope="col">Size</th>
-                  <th scope="col">Crust</th>
-                  <th scope="col">Toppings</th>
-                  <th scope="col">Quantity</th>
-                  
-                  <th scope="col">Total</th>
-                </tr>
-              </thead>
-              <tbody>
+            </select>
 
-              </tbody>
-              </table>
-          </div>
+            <div id="toppings-div">
+              <p>Select the Toppings. small size:@50 medium size:@100 large size:@150</p>
+              <input class="form-check-input" type="checkbox" value="1" id="toppings">
+              <label for="toppings" class="form-label"> Pepperoni.</label><br>
+
+              <input class="form-check-input" type="checkbox" value="2" id="toppings">
+              <label for="toppings" class="form-label"> Mushrooms</label><br>
+              
+            
+              <input class="form-check-input" type="checkbox" value="3" id="toppings">
+              <label for="toppings" class="form-label"> Onions.</label><br>
+              
+            
+              <input class="form-check-input" type="checkbox" value="4" id="toppings">
+              <label for="toppings" class="form-label"> Sausage</label><br>
+              
+              <input class="form-check-input" type="checkbox" value="5" id="toppings">
+              <label for="toppings" class="form-label"> Bacon</label><br>
+            </div>
+
+            <div class="row totals-footer">
+              <div class="col-md-2">
+                <label class="btn btn-outline-success" class="modify-quantity" id="subtract-quantity">
+                  <span class="fa fa-minus"></span>
+                </label>
+              </div>
+              <div class="col-md-4">
+                <p class="text-center pizza-total" id="quantity">1</p>
+              </div>
+              <div class="col-md-2">
+                <label class="btn btn-outline-success" class="modify-quantity" id="add-quantity">
+                  <span class="fa fa-plus"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="row totals-footer">
+              <div class="col-md-8">
+                <p class="pizza-total" id="pizza-total">Pizza Total: Ksh. 1,000</p>
+              </div>
+              <div class="col-md-4"><label class="btn btn-outline-success" id="add-to-cart">Add to Cart</label></div>
+            </div>
+          </form>
+            
+            
+           
         </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-7" id="tabledis">
+          <h5 class="text-center">My Cart</h5>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Type</th>
+                <th scope="col">Size</th>
+                <th scope="col">Crust</th>
+                <th scope="col">Toppings</th>
+                <th scope="col">Quantity</th>
+                
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="orders-table">
+            </tbody>
+            </table>
         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12" id="check-out">
+          <h5 class="text-center">Check Out</h5>
+        </div>
+      </div>
+      </div>
           <div class="container" id="footer">
             <div class="row">
                 <div class="col-sm-4" id ="Find">
