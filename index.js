@@ -70,19 +70,38 @@ const listOfPizzaToppingsNames = [
     "Sausage",
     "Bacon"
 ]
+// Map of topping prices by size
+const mapOfPizzaToppingPrices = new Map()
+mapOfPizzaToppingPrices.set(0, 0)
+mapOfPizzaToppingPrices.set(1, 50)
+mapOfPizzaToppingPrices.set(2, 100)
+mapOfPizzaToppingPrices.set(3, 150)
+
 const listOfPizzaSizeNames = [
     "Not selected",
     "Small",
     "Medium",
     "Large"
 ]
+// Map of pizza size prices
+const mapOfPizzaSizePrices = new Map()
+mapOfPizzaSizePrices.set(0, 0)
+mapOfPizzaSizePrices.set(1, 600)
+mapOfPizzaSizePrices.set(2, 800)
+mapOfPizzaSizePrices.set(3, 1000)
+
 const listOfPizzaCrustNames = [
     "Crust not selected",
     "Crispy",
     "Stuffed",
     "Gluten-free"
 ];
-
+// Map of pizza crust prices
+const mapOfPizzaCrustPrices = new Map()
+mapOfPizzaCrustPrices.set(0, 0)
+mapOfPizzaCrustPrices.set(1, 100)
+mapOfPizzaCrustPrices.set(2, 150)
+mapOfPizzaCrustPrices.set(3, 200)
 
 // Declare class for a PizzaOrder
 class PizzaOrder { // Naming conventions
