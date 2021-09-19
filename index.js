@@ -135,7 +135,15 @@ class PizzaOrder { // Naming conventions
                 unitToppingPrice = mapOfPizzaToppingPrices.get(0)
                 break;
         }
+// Calculate price of all toppings
+let totalToppingsPrice = unitToppingPrice * this.toppings.length
+    
+// Calculate total price
+let total = (parseInt(sizePrice) + parseInt(crustPrice) + parseInt(totalToppingsPrice)) * this.quantity;
 
+return total.toLocaleString('en-US', {maximumFractionDigits: 0});
+}
+}
 // Action listeners > Validator > Add to cart
 
 function setUpActionListeners(){
