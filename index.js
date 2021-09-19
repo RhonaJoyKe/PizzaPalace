@@ -277,3 +277,50 @@ function setUpActionListeners(){
             alert("Please select a pizza type")
         }
     }
+    function addToCart(){
+        // Get table as DOM element
+        let ordersTable = document.getElementById("orders-table")
+    
+        // Create new row
+        let tableRow = document.createElement('tr');
+    
+        // Create columns
+        let colNo = document.createElement('th');
+        colNo.setAttribute("scope", "row");
+        colNo.innerHTML = cartList.length + 1
+    
+        let colPizzaType = document.createElement('td')
+        colPizzaType.innerHTML = listOfPizzaTypeNames[currentOrder.pizzaType]
+    
+        let colPizzaSize = document.createElement('td')
+        colPizzaSize.innerHTML = listOfPizzaSizeNames[currentOrder.pizzaSize]
+    
+        let colPizzaCrust = document.createElement('td')
+        colPizzaCrust.innerHTML = listOfPizzaCrustNames[currentOrder.pizzaCrust]
+    
+        let toppingsString = ""
+        // Iterate through all toppings in the order to get their names
+        currentOrder.toppings.map(value => {
+            let toppingName = listOfPizzaToppingsNames[value]
+    
+            // Ternary operator
+            // Syntax: (condition) ? option-if-yes : option-if-no
+            toppingsString += toppingsString.length == 0 ? toppingName : `, ${toppingName}`
+        })
+    
+        let colPizzaToppings = document.createElement('td')
+        colPizzaToppings.innerHTML = toppingsString;
+    
+        let colPizzaQuantity = document.createElement('td')
+        colPizzaQuantity.innerHTML = currentOrder.quantity
+    
+        let colPizzaTotal = document.createElement('td')
+        colPizzaTotal.innerHTML = currentOrder.calculatePrice()
+    
+        tableRow.append(colNo, colPizzaType, colPizzaSize, colPizzaCrust, colPizzaToppings, colPizzaQuantity, colPizzaTotal)
+    
+        ordersTable.append(tableRow)
+    
+        // Add current order to cart and clear data
+        cartList.push(currentOrder)
+    }
