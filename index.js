@@ -144,6 +144,17 @@ let total = (parseInt(sizePrice) + parseInt(crustPrice) + parseInt(totalToppings
 return total.toLocaleString('en-US', {maximumFractionDigits: 0});
 }
 }
+// Declare array to save pizza orders
+let cartList = []
+
+// Create instance of PizzaOrder class
+let currentOrder = new PizzaOrder(
+    0,
+    0,
+    0,
+    1,
+    []
+);
 // Action listeners > Validator > Add to cart
 
 function setUpActionListeners(){
