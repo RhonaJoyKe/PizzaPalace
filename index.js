@@ -226,3 +226,14 @@ function setUpActionListeners(){
             updateTotal()
         });
     }
+    function updateQuantity(){
+        let currentQuantity = document.getElementById("quantity")
+    
+        currentQuantity.innerHTML = currentOrder.quantity
+    }
+    
+    function updateTotal(){
+        let currentOrderPrice = document.getElementById("pizza-total")
+    
+        currentOrderPrice.innerHTML = `Pizza Total: Ksh. ${currentOrder.calculatePrice()}`
+    }
