@@ -51,14 +51,34 @@ const pizzaCrusts = [
     },
 ];
 
-//toppings
-const pizzaToppings = ["Pepperoni","Mushrooms", "Onions", "Sausage","Bacon"];
-
-const pizzas = [
-    { name: "Cheese Burger" },
-    { name: "Meat Deluxe" },
-    { name: "Chicken Hawaiian" },
-    { name: "Chicken Macon BBQ" },
-    { name: "Chicken & Beef Pepperoni" },
-    { name: "Veg Feast" },
+// Pizza type names
+const listOfPizzaTypeNames = [
+    "Not selected",
+    "Cheeseburger",
+    "Meet Deluxe",
+    "Chicken Hawaaian",
+    "Chicken Bacon BBQ",
+    "Chicken & Beef Pepperoni",
+    "Veg Feast"
+]
+// Pizza toppings names
+const listOfPizzaToppingsNames = [
+    "Not known",
+    "Pepperoni",
+    "Mushrooms",
+    "Onions",
+    "Sausage",
+    "Bacon"
+]
+const listOfPizzaSizeNames = [
+    "Not selected",
+    "Small",
+    "Medium",
+    "Large"
+]
+const listOfPizzaCrustNames = [
+    "Crust not selected",
+    "Crispy",
+    "Stuffed",
+    "Gluten-free"
 ];
