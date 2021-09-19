@@ -82,6 +82,17 @@ const listOfPizzaCrustNames = [
     "Stuffed",
     "Gluten-free"
 ];
+
+
+// Declare class for a PizzaOrder
+class PizzaOrder { // Naming conventions
+    constructor (pizzaType, pizzaSize, pizzaCrust, quantity, toppings) {
+        this.pizzaType = pizzaType;
+        this.pizzaSize = pizzaSize;
+        this.pizzaCrust = pizzaCrust;
+        this.quantity = quantity;
+        this.toppings = toppings;
+    }
 // Action listeners > Validator > Add to cart
 
 function setUpActionListeners(){
