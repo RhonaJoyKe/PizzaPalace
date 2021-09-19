@@ -20,3 +20,45 @@ window.onload = (event) => {
       setTimeout(animateWelcomeText, speed);
     }
   }
+  const pizzaSizes = [
+    {
+        size: "small",
+        price: 600,
+    },
+    {
+        size: "medium",
+        price: 800,
+    },
+    {
+        size: "large",
+        price: 1000,
+    },
+];
+
+// pizza crusts
+const pizzaCrusts = [
+    {
+        name: "crispy",
+        price: 100,
+    },
+    {
+        name: "stuffed",
+        price: 150,
+    },
+    {
+        name: "Glutten free",
+        price: 200,
+    },
+];
+
+//toppings
+const pizzaToppings = ["Pepperoni","Mushrooms", "Onions", "Sausage","Bacon"];
+
+const pizzas = [
+    { name: "Cheese Burger" },
+    { name: "Meat Deluxe" },
+    { name: "Chicken Hawaiian" },
+    { name: "Chicken Macon BBQ" },
+    { name: "Chicken & Beef Pepperoni" },
+    { name: "Veg Feast" },
+];
