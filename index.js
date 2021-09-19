@@ -114,3 +114,13 @@ function setUpActionListeners(){
         // console.log(value);
 
         updateTotal()
+        
+        let pizzaCrustPicker = document.getElementById("pizza-crust")
+        pizzaCrustPicker.addEventListener("change", () => {
+            let value = pizzaCrustPicker.value
+    
+            // Update value on class
+            currentOrder.pizzaCrust = parseInt(value)
+    
+            updateTotal()
+        });
