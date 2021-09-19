@@ -82,3 +82,25 @@ const listOfPizzaCrustNames = [
     "Stuffed",
     "Gluten-free"
 ];
+// Action listeners > Validator > Add to cart
+
+function setUpActionListeners(){
+    // Set current quantity to 1
+    updateQuantity()
+
+    // Set current order total to zero
+    updateTotal()
+
+    // Hide/show pizza toppings selection
+    let toppingsDiv = document.getElementById("toppings-div")
+    toppingsDiv.style.display = 'none'
+
+    let pizzaTypePicker = document.getElementById("pizza-type")
+    pizzaTypePicker.addEventListener("change", () => {
+        let value = pizzaTypePicker.value
+
+        // Update value on class
+        currentOrder.pizzaType = parseInt(value)
+
+        updateTotal()
+    });
