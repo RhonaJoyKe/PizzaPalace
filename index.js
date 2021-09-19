@@ -262,3 +262,18 @@ function setUpActionListeners(){
     
         currentOrderPrice.innerHTML = `Pizza Total: Ksh. ${currentOrder.calculatePrice()}`
     }
+    function validateValues(){
+        if (currentOrder.pizzaType != 0) {
+            if (currentOrder.pizzaSize != 0) {
+                if (currentOrder.pizzaCrust != 0) {
+                    addToCart()
+                } else {
+                    alert("Please select your preferred crust")
+                }
+            } else {
+                alert("Please select the size of the pizza you want")
+            }
+        } else {
+            alert("Please select a pizza type")
+        }
+    }
