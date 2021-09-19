@@ -114,6 +114,13 @@ function setUpActionListeners(){
         // console.log(value);
 
         updateTotal()
+         // Only show if size is selected
+         if (value != 0) {
+            toppingsDiv.style.display = 'block'
+        } else {
+            toppingsDiv.style.display = 'none'
+        }
+    });
 
         let pizzaCrustPicker = document.getElementById("pizza-crust")
         pizzaCrustPicker.addEventListener("change", () => {
