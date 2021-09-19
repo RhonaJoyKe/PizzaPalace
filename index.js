@@ -226,6 +226,31 @@ function setUpActionListeners(){
             updateTotal()
         });
     }
+    let btnAddQuantity = document.getElementById("add-quantity")
+    btnAddQuantity.addEventListener("click", function() {
+        currentOrder.quantity = currentOrder.quantity + 1
+
+        updateQuantity()
+
+        updateTotal()
+    });
+
+    let btnSubtractQuantity = document.getElementById("subtract-quantity")
+    btnSubtractQuantity.addEventListener("click", function() {
+        if (currentOrder.quantity > 1) {
+            currentOrder.quantity = currentOrder.quantity - 1
+        }
+
+        updateQuantity()
+
+        updateTotal()
+    });
+
+    let btnAddToCart = document.getElementById("add-to-cart")
+    btnAddToCart.addEventListener("click", function() {
+        validateValues()
+    });
+}
     function updateQuantity(){
         let currentQuantity = document.getElementById("quantity")
     
