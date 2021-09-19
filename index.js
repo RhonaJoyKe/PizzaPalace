@@ -93,6 +93,14 @@ class PizzaOrder { // Naming conventions
         this.quantity = quantity;
         this.toppings = toppings;
     }
+    calculatePrice() {
+        // Get the price of the selected pizza size
+        let sizePrice = mapOfPizzaSizePrices.get(this.pizzaSize);
+    
+        // Get the price of the selected pizza crust
+        let crustPrice = mapOfPizzaCrustPrices.get(this.pizzaCrust);
+
+        // Get price of each topping based on pizza size
 // Action listeners > Validator > Add to cart
 
 function setUpActionListeners(){
