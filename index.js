@@ -14,12 +14,32 @@ jQuery(document).ready(function() {
     })
     $("#delivery1").click(function(){
             $(".data-overlay").show();
+
+    })
+        document.getElementById("submit").addEventListener(("click"), function () {
+            let userName =document.getElementById("name").value
+            let number=document.getElementById("email").value
+            let location=document.getElementById("location").value
+             
+              if(userName===null||userName===""){
+              alert("Please Write your Name")
+              }
+              else if(number===""||email===null){
+                alert("Please write your email")
+             }
+              else if (location===""||message===null){
+              alert("Please write your location")
+              }
+              else if(location!="" && number !="" && userName !=""){
+                alert(`${userName} Your Order will be delivered to your location once you check out`)
             
+              }
+            })
            
   
-        })
+        })   
         
-    });
+    
     
    
 window.onload = (event) => {
