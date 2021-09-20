@@ -3,15 +3,18 @@ body{
     padding:0;
 }
 #header{
-    background-color: #747474;
+    
     margin-top: 10px;
-
+   
+    
 }
 #welcome{
     font-size: 40px;
     font-weight: 900;
     color: #FF652F;
     padding-top: 12rem;
+    /* background-color: transparent;
+    background-color: #747474;  */
 }
 .navbarnav>li{
 
@@ -43,7 +46,7 @@ body{
     border-radius: 10px;
 }
 #tabledis{
-    box-shadow:0px 0px 4px 3px #FFE400;
+    box-shadow:0px 0px 4px 3px grey;
     border-radius: 10px;
 }
 
@@ -80,3 +83,11 @@ h3{
 .modify-quantity {
     width: 100%;
 }
+#next{
+    float: center;
+    margin-top: 15px;
+    margin-left: 50%;
+}
+ #delivery{
+     display: none;
+ }

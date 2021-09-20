@@ -1,6 +1,16 @@
 // Animate welcome text once page has been loaded
+jQuery(document).ready(function() {
+    $("#delivery").hide();
+    $('#next-step').click(function() {
+      $("#delivery").show();
+      
+      
+      
+    });
 window.onload = (event) => {
     animateWelcomeText();
+    setUpActionListeners();
+    nextStep()  
   };
   
   var i = 0;
@@ -323,4 +333,37 @@ function setUpActionListeners(){
     
         // Add current order to cart and clear data
         cartList.push(currentOrder)
+       
+    // if ($("#next-step").click(function(){
+        
+    //   })){
+    //   $("p").show();
+    //   }
+    //   else{
+    //     $("p").hide();   
+    //   }
+    //nextStep() 
     }
+    
+   
+//  function nextStep(){
+//     let btnpickup=document.getElementById("pickup")
+//     btnpickup.addEventListener("click",function(){
+//        alert`Total bill is`
+//     })
+
+//    let radios = document.forms["formb"].elements["radio"];
+//         for(var i = 0, max = radios.length; i < max; i++)  {
+//             radios[radio].onclick = function() {
+//                 alert(this.value);
+//     }
+//    let choice= document.getElementsById("pick-up").value   
+//    let choice1= document.getElementsById("delivery").value 
+//    if (choice){
+//         console.log("worked " )
+//    }
+//          else if(choice1)   {
+//             alert("Please write your Location")
+//          }   
+//         }
+ })

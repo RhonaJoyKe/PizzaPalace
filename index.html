@@ -13,6 +13,9 @@
    
    <!-- Import custom css -->
    <link rel="stylesheet" href="index.css">
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
 </head>
 <body>
   <div class="container">
@@ -46,9 +49,10 @@
             <div class="col-sm-6 text-center"  >
               <p id="welcome"></p>
             </div> 
-            <div class="col-sm-6">
+            
+             <div class="col-sm-6">
               <img src="Images/pizza.jpeg" img class="img-fluid">
-            </div>
+            </div> 
     </div>
     </div>
     <h3>ABOUT US </h3>
@@ -163,9 +167,9 @@
            
         </div>
         <div class="col-sm-1"></div>
-        <div class="col-sm-7" id="tabledis">
+        <div class="col-sm-6" id="tabledis">
           <h5 class="text-center">My Cart</h5>
-          <table class="table">
+          <table class="table responsive">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -179,16 +183,67 @@
               </tr>
             </thead>
             <tbody id="orders-table">
+             
             </tbody>
             </table>
-        </div>
-      </div>
+            </div>
+        
 
-      <div class="row">
-        <div class="col-sm-12" id="check-out">
+
+      <!-- <div class="row" id>
+        <div class="col-sm-2" id="check-out">
           <h5 class="text-center">Check Out</h5>
         </div>
+      </div> -->
       </div>
+    </div>
+    <div class="row" id>
+      <div class="col-sm-2" id="next">
+        <label class="btn btn-outline-success text-center" id="next-step"> 
+        Next Step</label>
+      </div>
+    </div>
+    <div class="container" id= "delivery">
+      <h3>Delivery Services</h3>
+      <div class="row text-center">
+        <div class="modeDiv">
+          <label for="modeofaccess">Choose a mode of Delivery </label><br>
+          <button type="button" class="btn btn-primary" id="pickup">Pick-up</button><br><br>
+     <button type="button" class="btn btn-secondary" id="delivery">Delivery</button>
+          
+          <!-- <label for="modeofaccess">Choose a mode of Delivery </label>
+          <select id="mode"name="mode">
+            <option value="Pickup">Pickup</option>
+            <option value="Delivery">Delivery</option>
+          </select> -->
+          <!-- <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> -->
+          <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div> -->
+      
+        </div>
+      </div>
+      <div class="row" id>
+        <div class="col-sm-2" id="next">
+          <label class="btn btn-outline-success text-center" id="next-step"> 
+          Check Out</label>
+        </div>
+      </div>
+     
       </div>
           <div class="container" id="footer">
             <div class="row">
@@ -219,5 +274,9 @@
           </div>
 
 </body>
-<script src="index.js"></script>
+<script src="index.js" type="text/javascript"></script>
+<!-- <script src="index.js"></script>
+<script src="bootstrap.bundle.js"></script>
+<script src="bootstrap.bundle.min.js"></script> -->
+ 
 </html>
