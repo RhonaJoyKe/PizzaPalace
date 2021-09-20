@@ -1,9 +1,7 @@
-# DELANI Studio
+# FELICE PIZZA PLACE
 #### 4th week Independent Project at Moringa School- Prep course
 #### By **RhonaJoy Koome**
 
-## ScreenShot
-<img src="assets/delanisample.png">
 
 ## Description
 This is a web page of a pizza restaraunt with an about us section,order section an services offered. 
@@ -41,6 +39,9 @@ A user is able to select the type of pizza they want,the size,crust an toppings.
 
 ## Support and contact details
 In case of any contributions or questions, email rhonajoy.koome@student.moringaschool.com or rhonajoy8@gmail.com
+## ScreenShot
+<img src="Images/felicepizza.png">
+
 
 ### License
 

@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
               alert("Please write your location")
               }
               else if(location!="" && number !="" && userName !=""){
-                alert(`${userName} Your Order will be delivered to your location once you check out`)
+                alert(`${userName} Your Order will be delivered to your ${location}} once you check out`)
               }
                })  
         $("#check-out").click(function(){
