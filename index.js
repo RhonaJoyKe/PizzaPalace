@@ -16,30 +16,30 @@ jQuery(document).ready(function() {
             $(".data-overlay").show();
 
     })
-        document.getElementById("submit").addEventListener(("click"), function () {
+        $("#submit").click( function () {
             let userName =document.getElementById("name").value
-            let number=document.getElementById("email").value
+            let number=document.getElementById("num").value
             let location=document.getElementById("location").value
              
               if(userName===null||userName===""){
               alert("Please Write your Name")
               }
-              else if(number===""||email===null){
-                alert("Please write your email")
+              else if(number===""||number===null){
+                alert("Please write your Number")
              }
-              else if (location===""||message===null){
+              else if (location===""||location===null){
               alert("Please write your location")
               }
               else if(location!="" && number !="" && userName !=""){
                 alert(`${userName} Your Order will be delivered to your location once you check out`)
-            
               }
-            })
-           
-  
-        })   
+               })  
+        $("#check-out").click(function(){
+
+        })
+
         
-    
+        });
     
    
 window.onload = (event) => {
@@ -369,35 +369,7 @@ function setUpActionListeners(){
         // Add current order to cart and clear data
         cartList.push(currentOrder)
        
-    // if ($("#next-step").click(function(){
-        
-    //   })){
-    //   $("p").show();
-    //   }
-    //   else{
-    //     $("p").hide();   
-    //   }
-    //nextStep() 
+    
     }
     
    
-//  function nextStep(){
-//     let btnpickup=document.getElementById("pickup")
-//     btnpickup.addEventListener("click",function(){
-//        alert`Total bill is`
-//     })
-
-//    let radios = document.forms["formb"].elements["radio"];
-//         for(var i = 0, max = radios.length; i < max; i++)  {
-//             radios[radio].onclick = function() {
-//                 alert(this.value);
-//     }
-//    let choice= document.getElementsById("pick-up").value   
-//    let choice1= document.getElementsById("delivery").value 
-//    if (choice){
-//         console.log("worked " )
-//    }
-//          else if(choice1)   {
-//             alert("Please write your Location")
-//          }   
-//         }
