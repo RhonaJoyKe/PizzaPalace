@@ -8,13 +8,20 @@ body{
    
     
 }
+#header1{
+    background-image: url(Images/Best-Juiciest-Tomato-Salad_020.jpg);
+    background-size: cover;
+    
+}
 #welcome{
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 900;
-    color: #FF652F;
+    color: #FFE400;;
+    /* color: #FF652F; */
     padding-top: 12rem;
-    /* background-color: transparent;
-    background-color: #747474;  */
+     background-color: transparent;
+    /* background-color: #747474;  
+} */
 }
 .navbarnav>li{
 
@@ -91,3 +98,6 @@ h3{
  #delivery{
      display: none;
  }
+ .data-overlay{
+     display: none;
+ } 

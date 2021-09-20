@@ -1,16 +1,31 @@
 // Animate welcome text once page has been loaded
 jQuery(document).ready(function() {
-    $("#delivery").hide();
     $('#next-step').click(function() {
-      $("#delivery").show();
-      
-      
-      
+        $("#delivery").show();
+       
+  
+    })
+    // $('#next-step').click(function() {
+    //     $("#delivery").hide();
+  
+    //  } )
+    $("#pickup").click(function () {
+        alert('Enjoy your Pizza and come back !')
+    })
+    $("#delivery1").click(function(){
+            $(".data-overlay").show();
+            
+           
+  
+        })
+        
     });
+    
+   
 window.onload = (event) => {
     animateWelcomeText();
     setUpActionListeners();
-    nextStep()  
+   
   };
   
   var i = 0;
@@ -366,4 +381,3 @@ function setUpActionListeners(){
 //             alert("Please write your Location")
 //          }   
 //         }
- })
