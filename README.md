@@ -10,7 +10,7 @@ This is a web page of a pizza restaraunt with an about us section,order section 
 
 <ul>
 <li>Open Terminal {Ctrl+Alt+T}</li>
-<li>git clone https://github.com/RhonaJoyKe/Delani-Studio.git</li>
+<li>git clone https://github.com/RhonaJoyKe/PizzaPalace.git</li>
 <li>cd Delani-Studio</li>
 <li>code . for VS code to run it</li>
 <li>Go live or start your server</li>
