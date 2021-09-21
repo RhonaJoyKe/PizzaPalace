@@ -18,7 +18,7 @@ This is a web page of a pizza restaraunt with an about us section,order section 
 
 ### Live Link
 
-<a>https://rhonajoyke.github.io/Delani-Studio/</a>
+<a>https://rhonajoyke.github.io/PizzaPalace/</a>
 
 ## Known Bugs
 
