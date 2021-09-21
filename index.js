@@ -1,6 +1,7 @@
 // Animate welcome text once page has been loaded
 jQuery(document).ready(function() {
-    $('#next-step').click(function() {
+    $('#next-step').click(function(event) {
+        event.preventDefault()
         $("#delivery").show();
        
   
@@ -16,7 +17,8 @@ jQuery(document).ready(function() {
             $(".data-overlay").show();
 
     })
-        $("#submit").click( function () {
+        $("#submit").click( function (event) {
+            event.preventDefault()
             let userName =document.getElementById("name").value
             let number=document.getElementById("num").value
             let location=document.getElementById("location").value
@@ -31,11 +33,11 @@ jQuery(document).ready(function() {
               alert("Please write your location")
               }
               else if(location!="" && number !="" && userName !=""){
-                alert(`${userName} Your Order will be delivered to your ${location}} once you check out`)
+                alert(`${userName} Your Order will be delivered to your ${location} once you check out`)
               }
                })  
         $("#check-out").click(function(){
-
+            alert("Please check the total amount of your order at the Table.Enjoy your Pizza")
         })
 
         
